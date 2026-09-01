@@ -61,8 +61,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .art-h3{font-family:var(--sc);font-size:1.5rem;font-weight:500;color:var(--gold-dark);letter-spacing:0.02em;margin-bottom:1.1rem}
 .art-p{font-size:1.08rem;margin-bottom:1.1rem}
 .art-checklist{list-style:none;margin:1.5rem 0;border-top:0.5px solid var(--line)}
-.art-checklist li{padding:1rem 0;border-bottom:0.5px solid var(--line);font-family:var(--sans);font-size:0.85rem;color:var(--brown-text);display:flex;gap:0.9rem}
+.art-checklist li{padding:1.1rem 0;border-bottom:0.5px solid var(--line);font-family:var(--sans);font-size:0.85rem;color:var(--brown-text);display:flex;gap:0.9rem;line-height:1.9}
 .art-checklist li span{font-family:var(--sc);color:var(--gold-dark);font-size:1.1rem;flex-shrink:0}
+.art-checklist li strong{color:var(--brown-dark);font-weight:500}
 .art-pull{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--gold-dark);text-align:center;line-height:1.5;padding:2.5rem 1rem;margin:1rem 0 3rem;border-top:0.5px solid var(--line);border-bottom:0.5px solid var(--line)}
 .art-pull span{display:block;font-family:var(--sans);font-style:normal;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--brown-muted);margin-top:1rem}
 .art-bio{display:grid;grid-template-columns:150px 1fr;gap:2rem;align-items:center;margin-top:3.5rem;padding-top:2.5rem;border-top:0.5px solid var(--line)}
@@ -76,6 +77,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .art-note a{color:var(--gold-dark);text-decoration:underline}
 .art-back{display:block;text-align:center;font-family:var(--sans);font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--brown-muted);text-decoration:none;margin-bottom:2rem}
 .art-back:hover{color:var(--gold-dark)}
+.art-cta{margin-top:3.5rem;padding:3rem 2rem;background:var(--brown-dark);text-align:center;border:0.5px solid rgba(160,131,60,0.25)}
+.art-cta-lbl{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.7rem}
+.art-cta-txt{font-family:var(--sc);font-size:1.15rem;color:var(--parchment-3);font-weight:400;letter-spacing:0.03em;margin-bottom:1.5rem}
+.btn-g{font-family:var(--sans);font-size:0.63rem;letter-spacing:0.22em;text-transform:uppercase;background:var(--gold-dark);color:var(--parchment-3);padding:0.85rem 2rem;text-decoration:none;display:inline-block;transition:background 0.3s;border:none;cursor:pointer}
+.btn-g:hover{background:var(--gold)}
 /* FOOTER */
 footer{background:var(--brown-dark);color:rgba(237,232,220,0.6);padding:4rem 6vw 2rem}
 .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:0.5px solid rgba(160,131,60,0.18)}
@@ -134,21 +140,41 @@ footer{background:var(--brown-dark);color:rgba(237,232,220,0.6);padding:4rem 6vw
 <div class="art-wrap">
   <a href="index.html#magazine" class="art-back">&larr; Back to the Magazine</a>
 
-  <p class="art-lead">Your personal brand is often your first introduction &mdash; long before the handshake, the meeting, or even the conversation.</p>
+  <p class="art-lead">In today's world, your personal brand is often your first introduction &mdash; long before a handshake, a meeting, or even a conversation.</p>
 
   <div class="art-sec">
-    <p class="art-p">Whether someone discovers you through LinkedIn, a search, or a referral, the impression they form is shaped by how clearly and consistently you present yourself. Jennifer Schuman argues that personal branding isn't reserved for celebrities or influencers anymore &mdash; it's a strategic necessity for anyone who wants to stand out, build trust, and create opportunity. At its core, she writes, it isn't about perfection. It's about alignment: when your visual presence, your messaging, and your reputation all move in the same direction, a brand becomes magnetic.</p>
+    <p class="art-p">Whether someone discovers you through LinkedIn, a Google search, or a referral, the impression they form is shaped by how clearly and consistently you present yourself.</p>
+    <p class="art-p">Personal branding is no longer reserved for celebrities or influencers; it is a strategic necessity for executives, entrepreneurs, and professionals who want to stand out, build trust, and create opportunity.</p>
+    <p class="art-p">At its core, personal branding is the intentional expression of who you are, what you stand for, and the value you bring. It's not about perfection &mdash; it's about alignment. When your visual presence, messaging, and reputation all work together, your brand becomes magnetic.</p>
   </div>
 
   <div class="art-sec">
     <h3 class="art-h3">Where Do You Stand?</h3>
-    <p class="art-p">To help readers locate themselves, Jennifer poses a quick, honest self-assessment &mdash; a handful of questions covering how clearly people understand your work when they meet you, how they respond when you describe what you do, how confidently you can name what sets you apart from your competition, and how visible your brand actually is online. The exercise isn't meant to flatter. It's meant to show you exactly where the gap is between how you see yourself and how the market currently sees you &mdash; which is the first real step toward closing it.</p>
+    <p class="art-p">To help you to evaluate where you are with your brand, and how others see you, here are four questions to consider:</p>
+    <ul class="art-checklist">
+      <li><span>1</span><div><strong>When it comes to my image, people:</strong><br>Need me to explain what I do<br>Can differentiate my work from others</div></li>
+      <li><span>2</span><div><strong>When you talk about your services, how do people respond?</strong><br>I don't get a response, and have a difficult time connecting<br>They sorta get it, but ask a lot of questions<br>They get what I say, and I get the sale</div></li>
+      <li><span>3</span><div><strong>When it comes to your competition, you:</strong><br>Have no idea who your competitors are<br>Are very similar to others, and trying to differentiate<br>Are not worried, you know you stand out</div></li>
+      <li><span>4</span><div><strong>How visible is your brand online?</strong><br>Does my mom count?<br>I'm starting to build my audience<br>I have a large audience, but could convert better<br>I am connecting + closing sales</div></li>
+    </ul>
+    <p class="art-p">Now, let's take your answers from above, and start to re-think and re-define who you are today, and where you can take your already established brand to raise and leverage your value. When &ldquo;The Crown&rdquo; series came out, were you like me? Maybe you were like me and found yourself immersed in this Netflix production, lured into the web of historic reflection, beautiful scenery, artistic license, and of course relationship drama.</p>
+    <p class="art-p">I have been reflecting on Queen Elizabeth II and the fact that she reigned for 70 years. She was the definition of resilience and majesty in the best light. Her Diamond Jubilee celebration encapsulated her devoted character and flawless loyalty as the second longest reigning monarch in history (do you think she might be upset about being topped by the froggy Frenchman, Louis XIV?).</p>
   </div>
 
   <div class="art-sec">
     <h3 class="art-h3">Two Portraits, Two Truths</h3>
-    <p class="art-p">To make her point, Jennifer turns to two of the most photographed women of the last century. In 2007, Annie Leibovitz photographed Queen Elizabeth II in full ceremonial regalia inside Buckingham Palace's White Drawing Room &mdash; every historic detail in place, radiating dutiful, steadfast authority. A decade earlier, Vanity Fair sent Mario Testino to photograph Diana, Princess of Wales, and Testino made the opposite choice entirely: a bare former schoolroom with whitewashed brick and cement floors, simple modern poses, none of the ceremonial weight. Diana later called it one of the happiest days of her life.</p>
-    <p class="art-p">Jennifer's point isn't that one setting beats the other. It's that both portraits worked for the same reason &mdash; each one was honest about exactly who its subject was in that chapter of her life. A historic, powerful setting can be just as meaningful as a stripped-down one, she writes, as long as it's actually true to you. That, more than polish or perfection, is what a personal brand is supposed to capture.</p>
+    <p class="art-p">Annie Leibovitz, an American photographer, was invited to capture Queen Elizabeth II in 2007, and chose the White Drawing Room at Buckingham Palace as the setting. Annie and her team created an opulent Portrait of HRH Elizabeth R., heavenly light streaming through the 1837 windows which had been constructed for the young Queen Victoria.</p>
+    <p class="art-p">Indulge your eyes here on this Portrait; by royal definition, this is the picture of intimacy. Her Majesty the Queen and Sovereign over Great Britain perched beautifully in full regalia, illuminated in light, every historic detail in place. Dutiful, renown, steadfastly ruling over her subjects across the globe. <em>(Image credit: Annie Leibovitz)</em></p>
+    <p class="art-p">Now let's consider another royal: Lady Di.</p>
+    <p class="art-p">Ten years earlier Vanity Fair had asked the Peruvian photographer, Mario Testino, to create a Portrait of Diana Princess of Wales in 1997. The session would aim to document her in her royal dresses before they were auctioned-off for charity.</p>
+    <p class="art-p">Testino chose to capture this royal in a new light. He chose to set her in a former Battersea school building with whitewashed brick walls and cement floors: this might sound dingy, but the results changed her life. <em>(Image credit: Mario Testino)</em></p>
+    <p class="art-p">Instead of the typical layers of powders, heavy heirloom jewels, and stiff ballgowns of her royal life, she was positioned in simple, modern, approachable poses.</p>
+    <p class="art-p">The place, setting, and lighting was kept to a minimum to suit the new non-ceremonial life Lady Diana had started to lead &ndash; and her natural personality and beauty came through. The photographs show a happy, playful side to Diana with a beautiful smile that was no longer hidden under all her royal hats.</p>
+    <p class="art-p">What do these two Portraits say about their subject?</p>
+    <p class="art-p">When it comes to defining your Personal Brand and bringing out your best, a historic power setting such as the Royal Throne can be just as meaningful as cement floors.</p>
+    <p class="art-p">Mario Testino and his team photographed Lady Di five months before she tragically passed away. I am thankful that he took a chance and chose the floor as the pedestal for this heartfelt, compassion, energetic &ldquo;Queen of Hearts&rdquo;.</p>
+    <p class="art-p">And, by the way, Mario had received a letter from Lady Di shortly after the Portrait session saying that the shoot in the old Battersea schoolroom had been one of the happiest days of her life; the photographs say it all.</p>
+    <p class="art-p">This is the time to re-think and re-define who you are today, and how to leverage your value; it's time to elevate!</p>
   </div>
 
   <div class="art-pull">
@@ -157,8 +183,10 @@ footer{background:var(--brown-dark);color:rgba(237,232,220,0.6);padding:4rem 6vw
   </div>
 
   <div class="art-sec">
-    <h3 class="art-h3">Time to Elevate</h3>
-    <p class="art-p">The invitation Jennifer leaves readers with is simple: this is the moment to re-think and re-define who you are today, and how to leverage the value you've already built &mdash; not by starting over, but by finally letting your presentation catch up to your presence.</p>
+    <p class="art-p">As a Personal Brand photographer, Jennifer understands that powerful imagery is far more than a headshot &mdash; it is a visual expression of identity, leadership, and value. Through thoughtful consultation, strategic creative direction, and an eye for timeless sophistication, Jennifer works closely with entrepreneurs, executives, and professionals to create imagery that communicates both confidence and authenticity.</p>
+    <p class="art-p">Each branding session begins with an in-depth exploration of the client's goals, message, and existing presence, allowing Jennifer to thoughtfully curate a personalized &ldquo;Look Book&rdquo; designed to align visual storytelling with professional purpose. Drawing from her background in international corporate branding, Jennifer creates striking, contemporary portraits intended to elevate visibility, strengthen connection, and capture the essence of each individual in their highest light. From expert styling guidance to collaborations with some of Chicago's leading hair and makeup artists, every detail of the experience is carefully considered to ensure clients feel empowered, polished, and fully seen. Jennifer's work is rooted in the belief that when image, presence, and purpose align, a personal brand becomes unforgettable.</p>
+    <p class="art-p">Jennifer is also the creator of the inspiring 40 Over 40 Project, a portrait and storytelling experience designed to celebrate the beauty, wisdom, resilience, and reinvention of women over forty. Through elegant portrait sessions and personal interviews, the project shines a light on the unique journeys of women who are redefining what it means to age with confidence, purpose, and authenticity. More than a photography series, 40 Over 40 is a movement that honors life experience, elevates personal stories, and empowers women to fully embrace their next chapter.</p>
+    <p class="art-p">To learn more or schedule a complimentary Personal Brand consultation, Jennifer welcomes you to connect directly and begin the process of redefining and elevating your visual presence.</p>
   </div>
 
   <div class="art-bio">
@@ -166,14 +194,17 @@ footer{background:var(--brown-dark);color:rgba(237,232,220,0.6);padding:4rem 6vw
     <div>
       <div class="art-bio-name">Jennifer Schuman</div>
       <div class="art-bio-role">Personal Brand &amp; Portrait Photographer &middot; Horizon Portraits</div>
-      <p class="art-bio-p">Jennifer works closely with entrepreneurs, executives, and professionals to create imagery that communicates both confidence and authenticity. Each branding session begins with an in-depth exploration of a client's goals and existing presence, resulting in a personalized "Look Book" designed to align visual storytelling with professional purpose. She is also the creator of the 40 Over 40 Project, a portrait and storytelling experience celebrating the beauty, wisdom, and reinvention of women over forty.</p>
       <div class="art-bio-contact">
         847.910.2722 &nbsp;&middot;&nbsp; <a href="mailto:jennifer@horizonportraits.com">jennifer@horizonportraits.com</a> &nbsp;&middot;&nbsp; <a href="https://www.horizonportraits.com" target="_blank">www.horizonportraits.com</a>
       </div>
     </div>
   </div>
 
-  <div class="art-note">This story appears in full in the ALC CONNECT Magazine, Summer-Fall 2026 issue. <a href="https://online.flippingbook.com/view/177548454/" target="_blank">Read the complete digital edition &rarr;</a></div>
+  <div class="art-cta">
+    <div class="art-cta-lbl">For the Full Magazine</div>
+    <div class="art-cta-txt">Read this story in full &mdash; and the rest of the Summer-Fall 2026 issue &mdash; in ALC CONNECT Magazine.</div>
+    <a href="https://online.flippingbook.com/view/177548454/" target="_blank" class="btn-g">Click Here to Read the Full Magazine</a>
+  </div>
 </div>
 
 <footer>
